@@ -36,7 +36,11 @@ const textHandler = (e) => {
       number.style.height = "7vw";
     }
   });
-  number.textContent = `#${count}`;
+  if (count > 0) {
+    number.textContent = `#${count}`;
+  } else {
+    number.textContent = "0";
+  }
 };
 
 text.addEventListener("input", textHandler);
