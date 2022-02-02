@@ -12,7 +12,8 @@ const textHandler = (e) => {
       char == "e" ||
       char == "i" ||
       char == "o" ||
-      char == "u"
+      char == "u" ||
+      char == " "
     ) {
       count++;
       setTimeout(() => {
@@ -35,7 +36,7 @@ const textHandler = (e) => {
       number.style.height = "7vw";
     }
   });
-  number.textContent = count;
+  number.textContent = `#${count}`;
 };
 
 text.addEventListener("input", textHandler);
