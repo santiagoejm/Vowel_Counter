@@ -12,8 +12,7 @@ const textHandler = (e) => {
       char == "e" ||
       char == "i" ||
       char == "o" ||
-      char == "u" ||
-      char == " "
+      char == "u"
     ) {
       count++;
       setTimeout(() => {
